@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.button{
+    display: block;
+    margin: 100px auto;
+    border-radius:20px;
+    width: 200px;
+    padding: 20px;
+    background-color: plum;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    font-weight: 700;
+
+    transition: background-color 500ms ease 250ms, color 250ms ease 100ms;
+    letter-spacing: 3px;
+}
+.button:hover{
+    background-color: cornflowerblue;
+    color: pink;
+}
+.button::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: ;
+    background-repeat: no-repeat;
+}
