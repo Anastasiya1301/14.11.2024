@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <button class="button">Hello!</button>
+    <!-- <button class="button">Hello!</button> -->
+    <button type="button" data-modal-open>Open modal</button>
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+            <button class="button" data-modal-close>
+                <svg class="svg">
+                    <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

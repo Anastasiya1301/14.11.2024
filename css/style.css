@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
 }
 .button{
@@ -25,6 +25,40 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-size: ;
+    background-size:cover;
     background-repeat: no-repeat;
+    background-image:url(../icons/symbol-defs.svg#icon-connection);
+    background-color: brown;
+    fill: white;
+} */
+.backdrop{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: violet;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 2000ms ease;
+    background-color: blueviolet;
+    padding: 20px;
+    width: 600px;
+    height: 700px;
+}
+.svg{
+    width: 20px;
+    height: 20px;
+}
+.backdrop.is-hidden .modal{
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
 }
